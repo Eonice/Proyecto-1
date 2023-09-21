@@ -8,17 +8,15 @@ using System.Threading.Tasks;
 
 namespace Proyecto_1
 {
-    public class Ejemplo_multiplicacion
+    public class millas_to_metros
     {
         public static void Main()
         {
-            int primernumero, segundonumero, multiplicacion;
-            Console.WriteLine("Introduce el primer numero");
-            primernumero = System.Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Introduce el segundo numero");
-            segundonumero = System.Convert.ToInt32(Console.ReadLine());
-            multiplicacion = primernumero * segundonumero;
-            Console.WriteLine("La multiplicacion entre {0} y {1} es {2}", primernumero, segundonumero, multiplicacion);
+            int millas, metros;
+            Console.WriteLine("Introduce las millas");
+            millas = System.Convert.ToInt32(Console.ReadLine());
+            metros = millas * 1852;
+            Console.WriteLine("{0} millas equivalen a {1} metros", millas, metros);
         }
     }
 }
