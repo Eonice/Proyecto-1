@@ -9,18 +9,19 @@ using System.Threading.Tasks;
 
 namespace Proyecto_1
 {
-    public class Write
+    public class Tabla_de_multiplicar
     {
         public static void Main()
         {
-            int a, b;
-            System.Console.Write("Introduce el primer dato ");
-            a = System.Convert.ToInt32(System.Console.ReadLine());
-            System.Console.Write("Introduce el segundo dato ");
-            b = System.Convert.ToInt32(Console.ReadLine());
-            int multiplicacion = (a + b) * (a - b);
-            int resta = (2 * a - 2 * b);
-            System.Console.WriteLine("multiplicacion y la resta de ambos es {2} y la resta del doble de cada uno es {3}", a, b, multiplicacion, resta);
+            int numero, multiplicador, resultado;
+            System.Console.WriteLine("Introduce un numero:");
+            numero = System.Convert.ToInt32(System.Console.ReadLine());
+            System.Console.WriteLine("Esta es la tabla de multiplicar de {0}:", numero);
+            for (multiplicador = 0; multiplicador <= 10; multiplicador++)
+            {
+                resultado = numero * multiplicador;
+                System.Console.WriteLine("{0} x {1} = {2}", numero, multiplicador, resultado);
+            }
         }
     }
 }
